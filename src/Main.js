@@ -26,12 +26,13 @@ function Main(){
   const user = 'Creator54'
 
   return(
-    <div>
+    <main>
       {/* <img style={styles} src={source} alt={time}/> */}
-      <main>
-        Good {time} {user}
-      </main>
-    </div>
+      Good {time} {user}
+      <div id='image-container'>
+        <img id='image' src='https://logodix.com/logo/871229.jpg' alt='bank image'/>
+      </div>
+    </main>
   )
 }
 

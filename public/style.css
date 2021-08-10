@@ -35,7 +35,7 @@ main{
   left:300px;
   position: absolute;
   font-size:40px;
-  height: 30px;
+  height: 300px;
   width: 300px;
   color: black;
 }
@@ -46,6 +46,14 @@ footer{
   bottom: 50px;
   text-align: center;
   font-size: 20px;
+}
+
+#image{
+  position:absolute;
+  left:700px;
+  top:-250px;
+  height:700px;
+  width:900px;
 }
 
 #navbar-right{
@@ -112,5 +120,3 @@ footer{
     border-bottom: 5px solid royalblue;
   }
 }
-
-/* <img src='https://image.shutterstock.com/image-vector/businessman-watering-dollar-plant-growth-260nw-1186508287.jpg' alt='logo'/> */
