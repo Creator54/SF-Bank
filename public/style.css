@@ -27,6 +27,24 @@ header{
   font-size: 30px;
 }
 
+main{
+  top:450px;
+  left:300px;
+  position: absolute;
+  font-size:40px;
+  height: 30px;
+  width: 300px;
+  color: black;
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
 #navbar-right{
   font-size:20px;
 }
