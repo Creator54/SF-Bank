@@ -26,6 +26,9 @@ header{
   left: 70px;
   font-size: 30px;
 }
+header a:link{
+  text-decoration: none;
+}
 
 main{
   top:450px;
