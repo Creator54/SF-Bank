@@ -4,11 +4,13 @@ body{
 }
 
 .navbar{
+  /* background-color: aliceblue; */
   height: 80px;
   color: #233F81;
   display: flex;
   justify-content: center;
   position: relative;
+  border-bottom: 1px solid royalblue;
 }
 
 .logo{
@@ -25,5 +27,69 @@ header{
   font-size: 30px;
 }
 
+#navbar-right{
+  font-size:20px;
+}
+
+@media screen and (max-width:449px) and (orientation: portrait){
+  #navbar-right{
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width:411px) and (max-width:448px) and (orientation: portrait){
+  #navbar-right{
+    padding-left: 80px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:350px) and (orientation: portrait){
+  #navbar-right{
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width:351px) and (max-width:375px) and (orientation: portrait){
+  #navbar-right{
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width:540px){
+  #navbar-right{
+    padding-left: 195px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width:768px) and (orientation: portrait){
+  #navbar-right{
+    padding-left: 440px;
+  }
+}
+@media screen and (min-width: 789px) and (max-width:1024px){
+  #navbar-right{
+    padding-left: 700px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width:1920px){
+  .logo{
+    top: 20px;
+    left: 10px;
+    width: 170px;
+  }
+
+  header{
+    top: 70px;
+    left: 140px;
+    font-size: 50px;
+  }
+
+  #navbar-right{
+    font-size: 30px;
+    padding-left: 1320px;
+  }
+  .navbar{
+    height: 190px;
+    border-bottom: 5px solid royalblue;
+  }
+}
 
 /* <img src='https://image.shutterstock.com/image-vector/businessman-watering-dollar-plant-growth-260nw-1186508287.jpg' alt='logo'/> */

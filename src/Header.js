@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Header(){
-  const date = new Date(2018,5,3,16)
+  const date = new Date()
   let time
   let source
 
@@ -23,20 +23,23 @@ function Header(){
   }
 
 
-  const styles = {
-    top:'10px',
-    right:'10px',
-    position:'absolute',
-    fontSize:'15px',
-    height:'30px',
-    width: '30px'
-  }
+  // const styles = {
+  //   top:'10px',
+  //   right:'10px',
+  //   position:'absolute',
+  //   fontSize:'15px',
+  //   height:'30px',
+  //   width: '30px'
+  // }
 
   return(
     <div className='navbar'>
       <img class='logo' src='https://static.vecteezy.com/system/resources/previews/000/620/462/large_2x/sun-generic-logo-and-symbols-vector.jpg' alt='logo'/>
       {/* <img style={styles} src={source} alt={time}/> */}
-      <header>SF-BANK</header>
+      <header>
+        <a>SF-BANK</a>
+        <a id='navbar-right'>Customers</a>
+      </header>
     </div>
   )
 }
