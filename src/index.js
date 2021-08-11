@@ -7,7 +7,7 @@ import Footer from './Footer'
 ReactDOM.render(
   <div>
     <Header/>
-    <Main/>
+    {/* <Main/> */}
     <DataTable/>
     <Footer/>
   </div>,

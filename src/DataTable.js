@@ -31,13 +31,9 @@ function DataTable(){
                   <th {...column.getHeaderProps()}>{column.render('Header')}</th>
                 ))
               }
-              <th></th>
             </tr>
           ))
         }
-        <tr>
-          <th></th>
-        </tr>
       </thead>
       <tbody {...getTableBodyProps()}>
         {
@@ -50,7 +46,6 @@ function DataTable(){
                     return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                   })
                 }
-                <td></td>
               </tr>
             )
           })
