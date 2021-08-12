@@ -1,10 +1,10 @@
 import React from 'react'
 
 function Popup(props) {
-  return (props.trigger)? (
+  return (props.showPopup)? (
     <div className='popup'>
       <div className='popup-inner'>
-        <button className='close-btn'>X</button>
+        <button className='close-btn' onClick={ () => props.setShowPopup(true) }>X</button>
         { props.children }
       </div>
     </div>

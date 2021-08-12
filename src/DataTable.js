@@ -7,7 +7,7 @@ import {COLUMNS} from './Columns'
 let userData
 
 function DataTable(){
-  const [table, settable] = useState('true')
+  const [table, setTable] = useState('true')
   const columns = useMemo(() => COLUMNS,[])
   const data = useMemo(() => DATA,[])
 
@@ -24,7 +24,7 @@ function DataTable(){
     prepareRow,
   } = tableInstance
 
-  return (table ==='true')? (
+  return (table)? (
     <table {...getTableProps()}>
       <thead>
         {
@@ -47,7 +47,7 @@ function DataTable(){
               <tr {...row.getRowProps()}>
                 {
                   row.cells.map((cell,i) => {
-                    return <td {...row.getRowProps({onClick: () =>{ settable('false');userData = row.original }})}>{cell.render("Cell")}</td>
+                    return <td {...row.getRowProps({onClick: () =>{ setTable(false);userData = row.original }})}>{cell.render("Cell")}</td>
                   })
                 }
               </tr>
@@ -58,7 +58,7 @@ function DataTable(){
     </table>
   ):
   (
-    <Popup trigger={true}>
+    <Popup showPopup={!table} setShowPopup={setTable}>
       {/* {console.log(user)} */}
       <h2>Name: {userData.name}</h2>
       <h2>Balance: {userData.balance}</h2>
