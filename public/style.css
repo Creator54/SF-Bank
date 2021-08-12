@@ -88,6 +88,8 @@ footer{
 }
 
 .popup-inner .close-btn{
+  min-width: 35px;
+  min-height: 25px;
   background-color: lightcoral;
   border: none;
   border-radius: 3px;
