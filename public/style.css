@@ -25,6 +25,15 @@ body{
   position: absolute;
 }
 
+.timeOfDay{
+  top:5px;
+  right:-90px;
+  position:absolute;
+  font-size:15px;
+  height:80px;
+  width:80px;
+}
+
 header{
   position: absolute;
   top: 20px;
@@ -37,10 +46,10 @@ header a:link{
 
 main{
   top:450px;
-  left:290px;
+  left:270px;
   position: absolute;
   font-size:40px;
-  height: 600px;
+  height: 100%;
   width: 400px;
   color: black;
 }
@@ -99,14 +108,17 @@ footer{
 }
 
 .send-btn-container{
-  width: inherit;
+  position: absolute;
+  width: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
 .send-btn{
-  width: 80px;
+  position: relative;
+  left: -15px;
+  width: 100px;
   height: 50px;
 }
 
@@ -170,7 +182,47 @@ table th {
     padding-left: 50px;
   }
   table{
-    margin-left: 2.5px;
+    margin-left: 0px;
+  }
+  main{
+    top:200px;
+    left:20px;
+    font-size:15px;
+    width: 150px;
+  }
+  .timeOfDay{
+    top:-10px;
+    right:-60px;
+    height:50px;
+    width:50px;
+  }
+  #image{
+    position:absolute;
+    left:-30px;
+    top:100px;
+    height:250px;
+    width:380px;
+  }
+  .popup-inner{
+    width: 80%;
+    height: 30%;
+  }
+  .popup-inner .close-btn{
+    min-width: 25px;
+    min-height: 15px;
+  }
+  .send-btn{
+    left: -38px;
+    height: 35px;
+  }
+  input{
+    margin-top: 4px;
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+  }
+  h2{
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 450px) and (max-width:540px){

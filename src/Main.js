@@ -22,22 +22,11 @@ function Main(){
     source = 'https://image.flaticon.com/icons/png/128/3626/3626276.png'
   }
 
-  const styles = {
-    top:'5px',
-    right:'-90px',
-    position:'absolute',
-    fontSize:'15px',
-    height:'80px',
-    width: '80px'
-  }
-
   return(
     <main>
       We hope you are having a wonderful {time} 
-      <img style={styles} src={source} alt={time}/>
-      <div id='image-container'>
-        <img id='image' src='https://logodix.com/logo/871229.jpg' alt='bank'/>
-      </div>
+      <img className='timeOfDay' src={source} alt={time}/>
+      <img id='image' src='https://logodix.com/logo/871229.jpg' alt='bank'/>
     </main>
   )
 }
