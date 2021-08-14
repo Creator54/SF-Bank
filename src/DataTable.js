@@ -1,10 +1,12 @@
 import React,{ useMemo, useState } from 'react'
-import {useTable} from 'react-table'
+import { useTable } from 'react-table'
 import Popup from './Popup'
 import DATA from './CustomerData'
-import {COLUMNS} from './Columns'
+import { COLUMNS } from './Columns'
+
 
 let userData
+let names
 
 function DataTable(){
   const [table, setTable] = useState('true')
@@ -13,28 +15,28 @@ function DataTable(){
   const columns = useMemo(() => COLUMNS,[])
   const data = useMemo(() => DATA,[])
 
-  const tableInstance = useTable({
-    columns,
-    data
-  })
-
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
     prepareRow,
-  } = tableInstance
+  } = useTable(
+    {
+      columns,
+      data
+    },
+  )
 
-  function handleUserNameInput(e) {
-    e.preventDefault()
-    setUserName(e.target.value)
-    if(e.target.value > userData.balance || e.target.value < 0) {
-      alert('Invalid User')
-      setAmount('')
-    }
-    // console.log(e.target.value)
-  }
+  // function handleUserNameInput(e) {
+  //   e.preventDefault()
+  //   setUserName(e.target.value)
+  //   if(e.target.value > userData.balance || e.target.value < 0) {
+  //     alert('Invalid User')
+  //     setAmount('')
+  //   }
+  //   // console.log(e.target.value)
+  // }
 
   function handleAmountInput(e)  {
     e.preventDefault()
@@ -64,12 +66,16 @@ function DataTable(){
       <tbody {...getTableBodyProps()}>
         {
           rows.slice(0,10).map((row ,i)=> {
-            prepareRow(row)            
+            prepareRow(row)  
+            names = row.original.name.split(" ") //get names data as an array
+            // console.log(names)          
             return(
               <tr {...row.getRowProps()}>
                 {
                   row.cells.map((cell,i) => {
-                    return <td {...row.getRowProps({onClick: () =>{ setTable(false);userData = row.original }})}>{cell.render("Cell")}</td>
+                    return <td {...row.getRowProps({onClick: () =>{ setTable(false);userData = row.original }})}>
+                      {cell.render("Cell")}
+                    </td>
                   })
                 }
               </tr>
@@ -87,7 +93,7 @@ function DataTable(){
       <br/>
       <>
         <h2>Transfer</h2>
-        <h2>User: <input type='text' value={userName} onChange={handleUserNameInput}></input></h2>
+        <h2>User: <select><option value={names}>{names}</option></select></h2>
         <h2>Amount: <input type='number' value={amount} onChange={handleAmountInput}></input></h2>
         <div className='send-btn-container'><button className='send-btn'>Send</button></div>
       </>
