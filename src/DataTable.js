@@ -6,7 +6,7 @@ import { COLUMNS } from './Columns'
 
 
 let userData
-let names
+let names = []
 
 function DataTable(){
   const [table, setTable] = useState('true')
@@ -67,8 +67,8 @@ function DataTable(){
         {
           rows.slice(0,10).map((row ,i)=> {
             prepareRow(row)  
-            names = row.original.name.split(" ") //get names data as an array
-            // console.log(names)          
+            names.push(row.original.name) //get names data as an array
+            // console.log(names)       
             return(
               <tr {...row.getRowProps()}>
                 {
@@ -94,6 +94,7 @@ function DataTable(){
       <>
         <h2>Transfer</h2>
         <h2>User: <select><option value={names}>{names}</option></select></h2>
+        {console.log(names)}
         <h2>Amount: <input type='number' value={amount} onChange={handleAmountInput}></input></h2>
         <div className='send-btn-container'><button className='send-btn'>Send</button></div>
       </>
