@@ -67,7 +67,7 @@ function DataTable(){
         {
           rows.slice(0,10).map((row ,i)=> {
             prepareRow(row)  
-            names.push(row.original.name) //get names data as an array
+            if(names.length !==10)names.push(row.original.name) //get names data as an array
             // console.log(names)       
             return(
               <tr {...row.getRowProps()}>
