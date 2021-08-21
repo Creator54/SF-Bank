@@ -284,7 +284,7 @@ table th {
   }
   .popup-inner{
     width: 80%;
-    height: 30%;
+    height: 40%;
   }
   .popup-inner .close-btn{
     min-width: 25px;
@@ -296,13 +296,13 @@ table th {
   }
   input{
     margin-top: 4px;
-    width: 300px;
+    width: 280px;
     height: 20px;
     font-size: 20px;
   }
   select{
     margin-top: 4px;
-    width: 310px;
+    width: 290px;
     height: 25px;
     font-size: 20px;
   }
@@ -313,7 +313,7 @@ table th {
     font-size: 12px;
   }
 }
-@media screen and (min-width:375px) and (max-height:667px) and (orientation: portrait){
+@media screen and (min-width:375px) and (min-height:667px) and (orientation: portrait){
   .popup-inner{
     width: 75%;
     height: 40%;
