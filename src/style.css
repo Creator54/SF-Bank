@@ -56,8 +56,11 @@ main{
 
 footer{
   width: 100%;
-  position: absolute;
-  bottom: 50px;
+  position: relative;
+  bottom: -700px;
+  border-bottom: 5px solid royalblue;
+  border-radius: 20px;
+  color: #233F81;
   text-align: center;
 }
 
