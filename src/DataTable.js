@@ -7,6 +7,7 @@ import { COLUMNS } from './Columns'
 
 let userData
 let names = []
+let Item
 
 function DataTable(){
   const [table, setTable] = useState('true')
@@ -28,6 +29,7 @@ function DataTable(){
     },
   )
 
+
   // function handleUserNameInput(e) {
   //   e.preventDefault()
   //   setUserName(e.target.value)
@@ -46,6 +48,10 @@ function DataTable(){
       setAmount('')
     }
     // console.log(e.target.value)
+  }
+
+  function makeOption(){
+    return <select>{names.map(Item)}</select>
   }
 
   return (table)? (
@@ -67,7 +73,10 @@ function DataTable(){
         {
           rows.slice(0,10).map((row ,i)=> {
             prepareRow(row)  
-            if(names.length !==10)names.push(row.original.name) //get names data as an array
+            if(names.length !==10) {
+              names.push(row.original.name) //get names data as an array
+              Item = (name,id) => <option key={id}>{name}</option>
+            }
             // console.log(names)       
             return(
               <tr {...row.getRowProps()}>
@@ -93,8 +102,7 @@ function DataTable(){
       <br/>
       <>
         <h2>Transfer</h2>
-        <h2>User: <select><option value={names}>{names}</option></select></h2>
-        {console.log(names)}
+        <h2>User: {makeOption()}</h2>
         <h2>Amount: <input type='number' value={amount} onChange={handleAmountInput}></input></h2>
         <div className='send-btn-container'><button className='send-btn'>Send</button></div>
       </>
