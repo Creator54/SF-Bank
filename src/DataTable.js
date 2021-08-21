@@ -11,7 +11,6 @@ let Item
 
 function DataTable(){
   const [table, setTable] = useState('true')
-  const [userName, setUserName] = useState('')
   const [amount, setAmount] = useState('')
   const columns = useMemo(() => COLUMNS,[])
   const data = useMemo(() => DATA,[])
@@ -28,17 +27,6 @@ function DataTable(){
       data
     },
   )
-
-
-  // function handleUserNameInput(e) {
-  //   e.preventDefault()
-  //   setUserName(e.target.value)
-  //   if(e.target.value > userData.balance || e.target.value < 0) {
-  //     alert('Invalid User')
-  //     setAmount('')
-  //   }
-  //   // console.log(e.target.value)
-  // }
 
   function handleAmountInput(e)  {
     e.preventDefault()
@@ -82,7 +70,7 @@ function DataTable(){
               <tr {...row.getRowProps()}>
                 {
                   row.cells.map((cell,i) => {
-                    return <td {...row.getRowProps({onClick: () =>{ setTable(false);userData = row.original }})}>
+                    return <td {...row.getRowProps({onClick: () =>{setTable(false);userData = row.original }})}>
                       {cell.render("Cell")}
                     </td>
                   })
@@ -104,7 +92,7 @@ function DataTable(){
         <h2>Transfer</h2>
         <h2>User: {makeOption()}</h2>
         <h2>Amount: <input type='number' value={amount} onChange={handleAmountInput}></input></h2>
-        <div className='send-btn-container'><button className='send-btn'>Send</button></div>
+        <div className='send-btn-container'><button className='send-btn' onClick={setTable}>Send</button></div>
       </>
     </Popup>
   )
