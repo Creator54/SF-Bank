@@ -8,7 +8,6 @@ body{
 
 .navbar{
   /* background-color: aliceblue; */
-  height: 80px;
   color: #233F81;
   display: flex;
   justify-content: center;
@@ -36,9 +35,7 @@ body{
 
 header{
   position: absolute;
-  top: 20px;
-  left: 70px;
-  font-size: 30px;
+  font-size: 25px;
 }
 header a:link{
   text-decoration: none;
@@ -72,8 +69,11 @@ footer{
   width:900px;
 }
 
-#navbar-right{
-  font-size:20px;
+.navbar-right{
+  padding-left: 30px;
+  position: relative;
+  font-size: 30px;
+  left: 1150px;
 }
 
 .popup{

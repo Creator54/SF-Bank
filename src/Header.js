@@ -10,7 +10,8 @@ function Header() {
       <img className='logo' src='https://static.vecteezy.com/system/resources/previews/000/620/462/large_2x/sun-generic-logo-and-symbols-vector.jpg' alt='logo'/>
       <header>
         <a href='#' onClick={() => setstate('main')}>SF BANK</a>
-        <a href='#' id='navbar-right' onClick={() => setstate('DataTable')}>Customers</a>
+        <a href='#' className='navbar-right' onClick={() => setstate('DataTable')}>Customers</a>
+        <a href='#' className='navbar-right'>Transactions</a>
       </header>
       {state==='main'?<Main/>:<DataTable/>}
     </div>
