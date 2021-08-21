@@ -1,9 +1,8 @@
 import React,{ useMemo, useState } from 'react'
 import { useTable } from 'react-table'
 import Popup from './Popup'
-import {customerData} from './CustomerData'
+import { customerData } from './CustomerData'
 import { COLUMNS } from './Columns'
-
 
 let userData
 let names = []
