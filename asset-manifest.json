@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SF-Bank/static/css/main.559633fd.chunk.css",
+    "main.css": "/SF-Bank/static/css/main.53e8abe0.chunk.css",
     "main.js": "/SF-Bank/static/js/main.2765b3ee.chunk.js",
     "main.js.map": "/SF-Bank/static/js/main.2765b3ee.chunk.js.map",
     "runtime-main.js": "/SF-Bank/static/js/runtime-main.83fd93bc.js",
@@ -8,13 +8,13 @@
     "static/js/2.79e5983f.chunk.js": "/SF-Bank/static/js/2.79e5983f.chunk.js",
     "static/js/2.79e5983f.chunk.js.map": "/SF-Bank/static/js/2.79e5983f.chunk.js.map",
     "index.html": "/SF-Bank/index.html",
-    "static/css/main.559633fd.chunk.css.map": "/SF-Bank/static/css/main.559633fd.chunk.css.map",
+    "static/css/main.53e8abe0.chunk.css.map": "/SF-Bank/static/css/main.53e8abe0.chunk.css.map",
     "static/js/2.79e5983f.chunk.js.LICENSE.txt": "/SF-Bank/static/js/2.79e5983f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.83fd93bc.js",
     "static/js/2.79e5983f.chunk.js",
-    "static/css/main.559633fd.chunk.css",
+    "static/css/main.53e8abe0.chunk.css",
     "static/js/main.2765b3ee.chunk.js"
   ]
 }
