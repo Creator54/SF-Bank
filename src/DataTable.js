@@ -32,7 +32,7 @@ function DataTable(){
     e.preventDefault()
     setAmount(e.target.value)
     if(e.target.value > userData.balance || e.target.value < 0) {
-      alert('Insufficient Balance')
+      alert('Invalid Amount')
       setAmount('')
     }
     // console.log(e.target.value)
