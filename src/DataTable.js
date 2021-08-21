@@ -1,7 +1,7 @@
 import React,{ useMemo, useState } from 'react'
 import { useTable } from 'react-table'
 import Popup from './Popup'
-import DATA from './CustomerData'
+import {customerData} from './CustomerData'
 import { COLUMNS } from './Columns'
 
 
@@ -13,7 +13,7 @@ function DataTable(){
   const [table, setTable] = useState('true')
   const [amount, setAmount] = useState('')
   const columns = useMemo(() => COLUMNS,[])
-  const data = useMemo(() => DATA,[])
+  const data = useMemo(() => customerData,[])
 
   const {
     getTableProps,

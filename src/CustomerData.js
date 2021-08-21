@@ -61,4 +61,32 @@ const customerData = [
   },
 ]
 
-export default customerData
+const transactionData = [
+  {
+    to: 'Dipesh',
+    from: 'Vishes',
+    amount: '2000',
+  },
+  {
+    to: 'Tara',
+    from: 'Vishes',
+    amount: '1230',
+  },
+  {
+    to: 'Shruti',
+    from: 'Dipesh',
+    amount: '2800',
+  },
+  {
+    to: 'Parimal',
+    from: 'Vishes',
+    amount: '1000',
+  },
+  {
+    to: 'Dipesh',
+    from: 'Dikshit',
+    amount: '200',
+  },
+]
+
+export {customerData,transactionData}
