@@ -183,10 +183,10 @@ table th {
     padding-left: 15px;
   }
 }
-
 @media screen and (min-width:351px) and (max-width:375px) and (orientation: portrait){
   .navbar{
     height: 80px;
+    width: 99%;
     border-bottom: 3px solid royalblue;
   }
   .navbar-right{
@@ -223,7 +223,7 @@ table th {
     left:-30px;
     top:100px;
     height:250px;
-    width:380px;
+    width:370px;
   }
   .popup-inner{
     width: 80%;
@@ -248,6 +248,9 @@ table th {
     width: 310px;
     height: 25px;
     font-size: 20px;
+  }
+  table{
+    font-size: 15px;
   }
   h2{
     font-size: 12px;
