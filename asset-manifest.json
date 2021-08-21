@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SF-Bank/static/css/main.a7dbeecb.chunk.css",
-    "main.js": "/SF-Bank/static/js/main.a361cc70.chunk.js",
-    "main.js.map": "/SF-Bank/static/js/main.a361cc70.chunk.js.map",
+    "main.js": "/SF-Bank/static/js/main.a8965701.chunk.js",
+    "main.js.map": "/SF-Bank/static/js/main.a8965701.chunk.js.map",
     "runtime-main.js": "/SF-Bank/static/js/runtime-main.83fd93bc.js",
     "runtime-main.js.map": "/SF-Bank/static/js/runtime-main.83fd93bc.js.map",
     "static/js/2.79e5983f.chunk.js": "/SF-Bank/static/js/2.79e5983f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.83fd93bc.js",
     "static/js/2.79e5983f.chunk.js",
     "static/css/main.a7dbeecb.chunk.css",
-    "static/js/main.a361cc70.chunk.js"
+    "static/js/main.a8965701.chunk.js"
   ]
 }
